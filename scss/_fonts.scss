@@ -1,0 +1,28 @@
+/* Trueno Light */
+@font-face {
+  font-family: 'TruenoLight';
+      src: url('https://fontlibrary.org/face/trueno/assets/fonts/trueno/f6125819e866b78711583d68298888ac/e5a66b560e95611395f22797b5e02df9/TruenoLight.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Treuno Ultra Black*/
+@font-face {
+  font-family: 'TruenoUltraBlack';
+      src: url('https://fontlibrary.org/face/trueno/assets/fonts/trueno/69d25d10193139d4a9cfc9d2196c23dc/87bdac0a04e4baf5bf4e424e13cb842e/TruenoUltraBlack.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Treuno Bold*/
+@font-face {
+  font-family: 'TruenoBold';
+      src: url('https://fontlibrary.org/face/trueno/assets/fonts/trueno/69d25d10193139d4a9cfc9d2196c23dc/75e1a3c3d0b921692ddf6a298bedab62/TruenoBold.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+$TruenoLt: "TruenoLight", Helvetica, Arial, sans-serif;
+$TruenoUltraBlack: "TruenoUltraBlack", Helvetica, Arial, sans-serif;
+$TruenoBold: "TruenoBold", Helvetica, Arial, sans-serif;

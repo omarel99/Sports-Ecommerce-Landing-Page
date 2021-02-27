@@ -1,0 +1,715 @@
+@import 'colors';
+@import 'fonts';
+/* General Styles */
+
+ul {
+  list-style-type: none;
+  font-family: $TruenoLt;
+}
+
+/* Top Navigation Bar */
+
+#top-nav {
+  height: 3.125rem;
+  width: 100%;
+  background-color: $darkMaroon;
+  text-align: center;
+  display: flex;
+  nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  .left-links,
+  .right-links {
+    display: flex;
+    li {
+      display: flex;
+      padding: .75rem;
+    }
+    a {
+      color: $white;
+      font-size: 0.8125rem;
+      line-height: 2;
+      text-decoration: none;
+    }
+    li:hover {
+      background: $pink;
+    }
+  }
+  .left-links {
+    margin-left: 17.813rem;
+  }
+  .right-links {
+    margin-left: auto;
+    margin-right: 17.813rem;
+  }
+  span {
+    color: $lightPinkBeige;
+  }
+  .fas {
+    margin-right: .5rem;
+  }
+  .border-right {
+    border-right: 1px solid $lightMaroon;
+  }
+}
+
+// Brand Navigation Bar
+#brand-nav {
+  height: 4.88rem;
+  background: $lightMaroon;
+  display: flex;
+  align-items: center;
+  .brand {
+    width: 17rem;
+    height: 55%;
+    .sportshold-logo {
+      padding-left: .6rem;
+      margin-left: 17.813rem;
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+  ul {
+    display: flex;
+    margin-right: 18rem;
+    margin-left: 25%;
+    height: 30%;
+    box-sizing: border-box;
+  }
+  li {
+    margin-left: 4.6rem;
+    height: 100%;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  a {
+    color: $white;
+    font-size: 1.0rem;
+    font-family: $TruenoLt;
+    text-decoration: none;
+  }
+  li:hover {
+    border-bottom: 4px $pink solid;
+  }
+  a:hover {
+    color: $pink;
+  }
+}
+
+/* Banner section*/
+
+#banner {
+  height: 37.5rem;
+  max-width: 100%;
+  background: $bannerBackground;
+  display: flex;
+  h1,
+  .p1 {
+    color: $lightMaroon;
+  }
+  h1,
+  h2 {
+    font-family: $TruenoUltraBlack;
+  }
+  .p1,
+  .p2 {
+    font-family: $TruenoLt;
+  }
+  .p2,
+  .browse-button {
+    font-size: 1rem;
+  }
+  #banner-shoe {
+    margin-top: -5.4rem;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .banner-info {
+    max-width: 50%;
+    margin: 6.5rem 32rem 0 0;
+  }
+  .p1 {
+    font-size: 1.875rem;
+  }
+  h1 {
+    font-size: 4.3rem;
+    font-weight: 800;
+    margin-top: 1.375rem;
+  }
+  h2 {
+    color: $pink;
+    font-size: 3.125rem;
+    font-weight: 900;
+    margin-top: 1.56rem;
+  }
+  .p2 {
+    color: $priceGalleryText;
+    line-height: 1.625;
+    margin-top: 2.1875rem;
+    font-weight: 200;
+  }
+  .browse-button {
+    font-family: $TruenoBold;
+    background: $pink;
+    color: $white;
+    font-weight: 600;
+    border: none;
+    width: 15.94rem;
+    height: 3rem;
+    margin-top: 2.375rem;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+
+/* Shoe Gallery */
+
+.view-collection,
+.discover {
+  font-family: $TruenoBold;
+  font-size: 1rem;
+  border: none;
+  line-height: 1.625;
+  font-weight: 600;
+  position: absolute;
+  transition: all .2s ease-in-out;
+  &:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+}
+
+#shoe-gallery {
+  height: 40.625rem;
+  width: 100%;
+  background: $white;
+  .gallery-container {
+    margin: 3.25rem auto auto auto;
+    width: 60%;
+    height: auto;
+    display: flex;
+    align-items: center;
+  }
+  .kyrie3 {
+    position: relative;
+    width: 33.75rem;
+    height: 33.75rem;
+    .view-collection {
+      background: $lightBlue;
+      width: 13.1875rem;
+      height: 3rem;
+      right: 27%;
+      top: 82%;
+    }
+  }
+  .shoe-gallery-right {
+    width: 35rem;
+    height: 36rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: -.4rem;
+    margin-left: 1.7rem;
+    .row {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin-top: 1.4rem;
+    }
+  }
+  .new-arrivals {
+    width: 34.5rem;
+    height: 16.9375rem;
+    position: relative;
+    .discover {
+      background: $lightMaroon;
+      color: $white;
+      width: 9.0625rem;
+      height: 3rem;
+      right: 21%;
+      top: 65%;
+    }
+    img {
+      width: 34.5rem;
+    }
+  }
+  .athletes,
+  .premium {
+    width: 15.9375rem;
+    height: 15.9375rem;
+  }
+  .premium {
+    margin-left: 1.7rem;
+  }
+  img {
+    max-width: 100%;
+  }
+}
+
+/* Shoe Picks Section */
+
+#shoe-picks {
+  width: 100%;
+  max-height: 288.19rem;
+  .shoe-picks-menu {
+    width: 29.94rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    ul {
+      display: flex;
+      font-family: $TruenoLt;
+      line-height: 1.2;
+      li a {
+        font-size: 1.875rem;
+        text-decoration: none;
+        color: $priceGalleryHeadings;
+        padding: 1rem;
+        &:hover {
+          font-family: $TruenoBold;
+          font-weight: 600;
+          color: $darkMaroon;
+        }
+      }
+    }
+  }
+  .shoe-picks-pricing {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    .shoe-picks-card {
+      max-width: 16.188rem;
+      max-height: 22.125rem;
+      padding: 1.875rem;
+      border: 1px solid $priceGalleryHeadings;
+      margin: 1.0rem;
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: column;
+      .card-shoe-img {
+        // border: 1px solid red;
+        width: 100%;
+        height: 100%;
+        .img-1 {
+          margin-top: 50px;
+        }
+        .img-2 {
+          margin-top: 75px;
+        }
+        .img-3 {
+          margin-top: -4px;
+        }
+        .img-4 {
+          margin-top: 30px;
+        }
+        .img-5,
+        .img-8 {
+          margin-top: 20px;
+        }
+        .img-7 {
+          margin-top: 30px;
+        }
+      }
+      h1,
+      p,
+      .discount {
+        font-family: $TruenoLt;
+        font-size: 1rem;
+        color: $priceGalleryText;
+        line-height: 1.625;
+      }
+      h1 {
+        font-weight: bold;
+      }
+      h1,
+      p {
+        margin-bottom: auto;
+      }
+      .price {
+        font-family: $TruenoLt;
+        font-size: 1.5rem;
+      }
+      .discount {
+        text-decoration: line-through;
+      }
+      .price,
+      .discount {
+        line-height: 1.083;
+      }
+      .discount-pink {
+        color: $pink;
+      }
+      .product-number {
+        color: $priceGalleryHeadings;
+        font-size: 0.813rem;
+      }
+    }
+  }
+  .brands {
+    margin: 6.25rem 0;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+/* Testimonials Section */
+
+#testimonials {
+  height: 35.75rem;
+  max-width: 100%;
+  background: url("/css/Images/Testimonials background image.png");
+  background-size: cover;
+  .testimonials-container {
+    margin: 0 auto;
+    width: 29%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .testimony {
+      margin-top: 6rem;
+      opacity: 0.502;
+      &:hover {
+        opacity: 1;
+        cursor: pointer;
+      }
+      .person {
+        width: 64px;
+        height: 65px;
+        display: block;
+        margin: auto;
+        border: solid $white 2px;
+        border-radius: 50%;
+        /* Crisper Images                              */
+        /* Opera                         */
+        image-rendering: -o-crisp-edges;
+        /* Safari                                 */
+        image-rendering: -webkit-optimize-contrast;
+        /* CSS3 Proposed                       */
+        image-rendering: optimize-contrast;
+        /* IE8+                                  */
+        -ms-interpolation-mode: nearest-neighbor;
+      }
+    }
+    .name {
+      margin-top: 1.5rem;
+      color: $white;
+      font-weight: bold;
+      font-size: 1rem;
+      font-family: $TruenoBold;
+      line-height: 1.625;
+      text-align: center;
+    }
+  }
+  .review-container {
+    .review {
+      margin: 3.5rem auto;
+      background-color: rgba(255, 255, 255, 0.102);
+      min-height: 11.88rem;
+      max-width: 69.38rem;
+      display: block;
+      position: relative;
+      .tip {
+        width: 0;
+        height: 0;
+        border-top: 0px solid transparent;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-bottom: 20px solid rgba(255, 255, 255, 0.102);
+        position: absolute;
+        top: -9.8%;
+        left: 48%;
+      }
+      p {
+        color: $white;
+        text-align: center;
+        font-size: 1rem;
+        font-family: $TruenoLt;
+        word-wrap: break-word;
+        line-height: 1.625;
+        padding: 1.5rem;
+      }
+    }
+  }
+}
+
+/* Latest News Section */
+
+#latest-news {
+  height: 39.125rem;
+  max-width: 100%;
+  h1 {
+    font-size: 1.875rem;
+    font-family: $TruenoBold;
+    font-weight: 700;
+    color: $darkMaroon;
+    line-height: 1.2;
+    text-align: center;
+    margin-top: 6.13rem;
+  }
+  .articles-container {
+    margin: 2rem auto 6.38rem auto;
+    width: 63%;
+    display: flex;
+    justify-content: space-around;
+    .article {
+      height: 22.13rem;
+      width: 22.13rem;
+      margin: 1.5rem;
+      border: 1px solid rgb(224, 223, 222);
+      /* Crisper Images                              */
+      /* Opera                         */
+      image-rendering: -o-crisp-edges;
+      /* Safari                                 */
+      image-rendering: -webkit-optimize-contrast;
+      /* CSS3 Proposed                       */
+      image-rendering: optimize-contrast;
+      /* IE8+                                  */
+      -ms-interpolation-mode: nearest-neighbor;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      position: relative;
+      /* gradient overlay for images */
+      &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-image: linear-gradient( 45deg, rgb(71, 36, 36) 0%, rgba(71, 36, 36, 0) 100%);
+        z-index: 1;
+      }
+    }
+    h2,
+    p {
+      color: $white;
+      padding: 1.5rem;
+      position: absolute;
+      z-index: 2;
+      font-size: 1rem;
+      line-height: 1.625;
+    }
+    h2 {
+      top: 50%;
+      font-family: $TruenoBold;
+      font-weight: bold;
+    }
+    p {
+      top: 60%;
+      font-family: $TruenoLt;
+    }
+    .comments {
+      top: 80%;
+      color: $pink;
+      img {
+        vertical-align: middle;
+      }
+    }
+    .article-1 {
+      background-image: url('/css/Images/Article One.png');
+    }
+    .article-2 {
+      background-image: url('/css/Images/Article Two.png');
+    }
+    .article-3 {
+      background-image: url('/css/Images/Article Three.png');
+    }
+  }
+}
+
+/* Questions Section */
+
+#questions {
+  height: 12.5rem;
+  max-width: 100%;
+  background: $pink;
+  display: flex;
+  align-items: center;
+  .questions-container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    .help {
+      display: flex;
+      color: $white;
+      font-size: 1rem;
+      font-family: $TruenoLt;
+      line-height: 1.625;
+      h3 {
+        font-family: $TruenoBold;
+        font-weight: 600;
+        line-height: 1.2;
+        font-size: 30px;
+      }
+      .mail-icon {
+        width: 3.875rem;
+        height: 2.625rem;
+        align-self: center;
+        margin-right: 1rem;
+      }
+    }
+  }
+  .inquiry {
+    align-self: center;
+    button {
+      background: $darkMaroon;
+      color: $white;
+      border: none;
+      font-size: 1rem;
+      line-height: 1.625;
+      font-family: $TruenoBold;
+      font-weight: 700;
+      width: 13.1875rem;
+      height: 3rem;
+      transition: all .2s ease-in-out;
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+/* Footer Section */
+
+#footer {
+  max-width: 100%;
+  height: 45.75rem;
+  background: $lightMaroon;
+  .services {
+    min-height: 13rem;
+    max-width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    color: $white;
+    align-items: center;
+    justify-content: space-around;
+    .shipping,
+    .money-back,
+    .customer-support,
+    .lowest-prices,
+    .exclusive-items,
+    .delivery {
+      max-width: 9rem;
+      min-height: 8rem;
+      line-height: 1.625;
+      font-size: 1rem;
+      font-family: $TruenoLt;
+      p {
+        margin-top: 1.75rem;
+      }
+    }
+    .delivery {
+      img {
+        margin-top: .3rem;
+      }
+      p {
+        margin-top: 2.2rem;
+      }
+    }
+  }
+  hr {
+    border-color: rgba(255, 255, 255, 0.149);
+    background-color: rgba(255, 255, 255, 0.149);
+    color: rgba(255, 255, 255, 0.149);
+    height: 1px;
+    width: 62%;
+    margin: 0 auto;
+    border: none;
+  }
+  .sitemap-container {
+    width: 67%;
+    margin: 3.75rem auto;
+    display: flex;
+    justify-content: space-around;
+    .contact,
+    .navigation,
+    .categories,
+    .sales,
+    .support {
+      display: flex;
+      flex-direction: column;
+    }
+    .call-us,
+    .email-us,
+    .address {
+      display: flex;
+      align-items: center;
+    }
+    .call-us-icon,
+    .email-us-icon,
+    .address-icon {
+      width: 3.44rem;
+      height: 3.44rem;
+      background: $pink;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 1rem;
+    }
+    .contact-method,
+    .navigation,
+    .categories,
+    .sales,
+    .support {
+      font-size: 1rem;
+      font-family: $TruenoBold;
+      line-height: 1.625;
+    }
+    h4 {
+      color: $pink;
+      font-weight: 700;
+    }
+    p {
+      font-family: $TruenoLt;
+    }
+    p,
+    a {
+      color: $white;
+    }
+    a {
+      text-decoration: none;
+    }
+  }
+  .navigation,
+  .categories,
+  .sales,
+  .support {
+    a {
+      margin-top: 1rem;
+    }
+  }
+  .footer-bottom {
+    width: 68%;
+    margin: 3rem auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    font-family: $TruenoLt;
+    font-size: 1rem;
+    color: $white;
+    a {
+      color: $pink;
+      text-decoration: none;
+    }
+    .social-links {
+      img {
+        margin-left: 2rem;
+      }
+    }
+  }
+}

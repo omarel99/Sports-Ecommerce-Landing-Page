@@ -1,0 +1,779 @@
+/* Trueno Light */
+@font-face {
+  font-family: 'TruenoLight';
+  src: url("https://fontlibrary.org/face/trueno/assets/fonts/trueno/f6125819e866b78711583d68298888ac/e5a66b560e95611395f22797b5e02df9/TruenoLight.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal; }
+
+/* Treuno Ultra Black*/
+@font-face {
+  font-family: 'TruenoUltraBlack';
+  src: url("https://fontlibrary.org/face/trueno/assets/fonts/trueno/69d25d10193139d4a9cfc9d2196c23dc/87bdac0a04e4baf5bf4e424e13cb842e/TruenoUltraBlack.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal; }
+
+/* Treuno Bold*/
+@font-face {
+  font-family: 'TruenoBold';
+  src: url("https://fontlibrary.org/face/trueno/assets/fonts/trueno/69d25d10193139d4a9cfc9d2196c23dc/75e1a3c3d0b921692ddf6a298bedab62/TruenoBold.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal; }
+
+/* General Styles */
+ul {
+  list-style-type: none;
+  font-family: "TruenoLight", Helvetica, Arial, sans-serif; }
+
+/* Top Navigation Bar */
+#top-nav {
+  height: 3.125rem;
+  width: 100%;
+  background-color: #472424;
+  text-align: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+  #top-nav nav {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  #top-nav .left-links,
+  #top-nav .right-links {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    #top-nav .left-links li,
+    #top-nav .right-links li {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      padding: .75rem; }
+    #top-nav .left-links a,
+    #top-nav .right-links a {
+      color: #ffffff;
+      font-size: 0.8125rem;
+      line-height: 2;
+      text-decoration: none; }
+    #top-nav .left-links li:hover,
+    #top-nav .right-links li:hover {
+      background: #ff7373; }
+  #top-nav .left-links {
+    margin-left: 17.813rem; }
+  #top-nav .right-links {
+    margin-left: auto;
+    margin-right: 17.813rem; }
+  #top-nav span {
+    color: #dcc5b8; }
+  #top-nav .fas {
+    margin-right: .5rem; }
+  #top-nav .border-right {
+    border-right: 1px solid #623232; }
+
+#brand-nav {
+  height: 4.88rem;
+  background: #623232;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  #brand-nav .brand {
+    width: 17rem;
+    height: 55%; }
+    #brand-nav .brand .sportshold-logo {
+      padding-left: .6rem;
+      margin-left: 17.813rem;
+      max-width: 100%;
+      max-height: 100%; }
+  #brand-nav ul {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 18rem;
+    margin-left: 25%;
+    height: 30%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
+  #brand-nav li {
+    margin-left: 4.6rem;
+    height: 100%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    text-align: center; }
+  #brand-nav a {
+    color: #ffffff;
+    font-size: 1.0rem;
+    font-family: "TruenoLight", Helvetica, Arial, sans-serif;
+    text-decoration: none; }
+  #brand-nav li:hover {
+    border-bottom: 4px #ff7373 solid; }
+  #brand-nav a:hover {
+    color: #ff7373; }
+
+/* Banner section*/
+#banner {
+  height: 37.5rem;
+  max-width: 100%;
+  background: #f0efee;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+  #banner h1,
+  #banner .p1 {
+    color: #623232; }
+  #banner h1,
+  #banner h2 {
+    font-family: "TruenoUltraBlack", Helvetica, Arial, sans-serif; }
+  #banner .p1,
+  #banner .p2 {
+    font-family: "TruenoLight", Helvetica, Arial, sans-serif; }
+  #banner .p2,
+  #banner .browse-button {
+    font-size: 1rem; }
+  #banner #banner-shoe {
+    margin-top: -5.4rem; }
+    #banner #banner-shoe img {
+      width: 100%;
+      height: auto; }
+  #banner .banner-info {
+    max-width: 50%;
+    margin: 6.5rem 32rem 0 0; }
+  #banner .p1 {
+    font-size: 1.875rem; }
+  #banner h1 {
+    font-size: 4.3rem;
+    font-weight: 800;
+    margin-top: 1.375rem; }
+  #banner h2 {
+    color: #ff7373;
+    font-size: 3.125rem;
+    font-weight: 900;
+    margin-top: 1.56rem; }
+  #banner .p2 {
+    color: #8a8784;
+    line-height: 1.625;
+    margin-top: 2.1875rem;
+    font-weight: 200; }
+  #banner .browse-button {
+    font-family: "TruenoBold", Helvetica, Arial, sans-serif;
+    background: #ff7373;
+    color: #ffffff;
+    font-weight: 600;
+    border: none;
+    width: 15.94rem;
+    height: 3rem;
+    margin-top: 2.375rem;
+    cursor: pointer;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out; }
+    #banner .browse-button:hover {
+      -webkit-transform: scale(1.1);
+          -ms-transform: scale(1.1);
+              transform: scale(1.1); }
+
+/* Shoe Gallery */
+.view-collection,
+.discover {
+  font-family: "TruenoBold", Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  border: none;
+  line-height: 1.625;
+  font-weight: 600;
+  position: absolute;
+  -webkit-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out; }
+  .view-collection:hover,
+  .discover:hover {
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+    cursor: pointer; }
+
+#shoe-gallery {
+  height: 40.625rem;
+  width: 100%;
+  background: #ffffff; }
+  #shoe-gallery .gallery-container {
+    margin: 3.25rem auto auto auto;
+    width: 60%;
+    height: auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  #shoe-gallery .kyrie3 {
+    position: relative;
+    width: 33.75rem;
+    height: 33.75rem; }
+    #shoe-gallery .kyrie3 .view-collection {
+      background: #4bd8cd;
+      width: 13.1875rem;
+      height: 3rem;
+      right: 27%;
+      top: 82%; }
+  #shoe-gallery .shoe-gallery-right {
+    width: 35rem;
+    height: 36rem;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    margin-top: -.4rem;
+    margin-left: 1.7rem; }
+    #shoe-gallery .shoe-gallery-right .row {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      margin-top: 1.4rem; }
+  #shoe-gallery .new-arrivals {
+    width: 34.5rem;
+    height: 16.9375rem;
+    position: relative; }
+    #shoe-gallery .new-arrivals .discover {
+      background: #623232;
+      color: #ffffff;
+      width: 9.0625rem;
+      height: 3rem;
+      right: 21%;
+      top: 65%; }
+    #shoe-gallery .new-arrivals img {
+      width: 34.5rem; }
+  #shoe-gallery .athletes,
+  #shoe-gallery .premium {
+    width: 15.9375rem;
+    height: 15.9375rem; }
+  #shoe-gallery .premium {
+    margin-left: 1.7rem; }
+  #shoe-gallery img {
+    max-width: 100%; }
+
+/* Shoe Picks Section */
+#shoe-picks {
+  width: 100%;
+  max-height: 288.19rem; }
+  #shoe-picks .shoe-picks-menu {
+    width: 29.94rem;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    #shoe-picks .shoe-picks-menu ul {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      font-family: "TruenoLight", Helvetica, Arial, sans-serif;
+      line-height: 1.2; }
+      #shoe-picks .shoe-picks-menu ul li a {
+        font-size: 1.875rem;
+        text-decoration: none;
+        color: #bdb9b5;
+        padding: 1rem; }
+        #shoe-picks .shoe-picks-menu ul li a:hover {
+          font-family: "TruenoBold", Helvetica, Arial, sans-serif;
+          font-weight: 600;
+          color: #472424; }
+  #shoe-picks .shoe-picks-pricing {
+    width: 70%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 auto; }
+    #shoe-picks .shoe-picks-pricing .shoe-picks-card {
+      max-width: 16.188rem;
+      max-height: 22.125rem;
+      padding: 1.875rem;
+      border: 1px solid #bdb9b5;
+      margin: 1.0rem;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: space-evenly;
+      -webkit-justify-content: space-evenly;
+          -ms-flex-pack: space-evenly;
+              justify-content: space-evenly;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+      #shoe-picks .shoe-picks-pricing .shoe-picks-card .card-shoe-img {
+        width: 100%;
+        height: 100%; }
+        #shoe-picks .shoe-picks-pricing .shoe-picks-card .card-shoe-img .img-1 {
+          margin-top: 50px; }
+        #shoe-picks .shoe-picks-pricing .shoe-picks-card .card-shoe-img .img-2 {
+          margin-top: 75px; }
+        #shoe-picks .shoe-picks-pricing .shoe-picks-card .card-shoe-img .img-3 {
+          margin-top: -4px; }
+        #shoe-picks .shoe-picks-pricing .shoe-picks-card .card-shoe-img .img-4 {
+          margin-top: 30px; }
+        #shoe-picks .shoe-picks-pricing .shoe-picks-card .card-shoe-img .img-5,
+        #shoe-picks .shoe-picks-pricing .shoe-picks-card .card-shoe-img .img-8 {
+          margin-top: 20px; }
+        #shoe-picks .shoe-picks-pricing .shoe-picks-card .card-shoe-img .img-7 {
+          margin-top: 30px; }
+      #shoe-picks .shoe-picks-pricing .shoe-picks-card h1,
+      #shoe-picks .shoe-picks-pricing .shoe-picks-card p,
+      #shoe-picks .shoe-picks-pricing .shoe-picks-card .discount {
+        font-family: "TruenoLight", Helvetica, Arial, sans-serif;
+        font-size: 1rem;
+        color: #8a8784;
+        line-height: 1.625; }
+      #shoe-picks .shoe-picks-pricing .shoe-picks-card h1 {
+        font-weight: bold; }
+      #shoe-picks .shoe-picks-pricing .shoe-picks-card h1,
+      #shoe-picks .shoe-picks-pricing .shoe-picks-card p {
+        margin-bottom: auto; }
+      #shoe-picks .shoe-picks-pricing .shoe-picks-card .price {
+        font-family: "TruenoLight", Helvetica, Arial, sans-serif;
+        font-size: 1.5rem; }
+      #shoe-picks .shoe-picks-pricing .shoe-picks-card .discount {
+        text-decoration: line-through; }
+      #shoe-picks .shoe-picks-pricing .shoe-picks-card .price,
+      #shoe-picks .shoe-picks-pricing .shoe-picks-card .discount {
+        line-height: 1.083; }
+      #shoe-picks .shoe-picks-pricing .shoe-picks-card .discount-pink {
+        color: #ff7373; }
+      #shoe-picks .shoe-picks-pricing .shoe-picks-card .product-number {
+        color: #bdb9b5;
+        font-size: 0.813rem; }
+  #shoe-picks .brands {
+    margin: 6.25rem 0; }
+    #shoe-picks .brands img {
+      width: 100%;
+      height: auto; }
+
+/* Testimonials Section */
+#testimonials {
+  height: 35.75rem;
+  max-width: 100%;
+  background: url("./Images/Testimonials background image.png");
+  -webkit-background-size: cover;
+          background-size: cover; }
+  #testimonials .testimonials-container {
+    margin: 0 auto;
+    width: 29%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    #testimonials .testimonials-container .testimony {
+      margin-top: 6rem;
+      opacity: 0.502; }
+      #testimonials .testimonials-container .testimony:hover {
+        opacity: 1;
+        cursor: pointer; }
+      #testimonials .testimonials-container .testimony .person {
+        width: 64px;
+        height: 65px;
+        display: block;
+        margin: auto;
+        border: solid #ffffff 2px;
+        border-radius: 50%;
+        /* Crisper Images                              */
+        /* Opera                         */
+        image-rendering: -o-crisp-edges;
+        /* Safari                                 */
+        image-rendering: -webkit-optimize-contrast;
+        /* CSS3 Proposed                       */
+        image-rendering: optimize-contrast;
+        /* IE8+                                  */
+        -ms-interpolation-mode: nearest-neighbor; }
+    #testimonials .testimonials-container .name {
+      margin-top: 1.5rem;
+      color: #ffffff;
+      font-weight: bold;
+      font-size: 1rem;
+      font-family: "TruenoBold", Helvetica, Arial, sans-serif;
+      line-height: 1.625;
+      text-align: center; }
+  #testimonials .review-container .review {
+    margin: 3.5rem auto;
+    background-color: rgba(255, 255, 255, 0.102);
+    min-height: 11.88rem;
+    max-width: 69.38rem;
+    display: block;
+    position: relative; }
+    #testimonials .review-container .review .tip {
+      width: 0;
+      height: 0;
+      border-top: 0px solid transparent;
+      border-left: 20px solid transparent;
+      border-right: 20px solid transparent;
+      border-bottom: 20px solid rgba(255, 255, 255, 0.102);
+      position: absolute;
+      top: -9.8%;
+      left: 48%; }
+    #testimonials .review-container .review p {
+      color: #ffffff;
+      text-align: center;
+      font-size: 1rem;
+      font-family: "TruenoLight", Helvetica, Arial, sans-serif;
+      word-wrap: break-word;
+      line-height: 1.625;
+      padding: 1.5rem; }
+
+/* Latest News Section */
+#latest-news {
+  height: 39.125rem;
+  max-width: 100%; }
+  #latest-news h1 {
+    font-size: 1.875rem;
+    font-family: "TruenoBold", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    color: #472424;
+    line-height: 1.2;
+    text-align: center;
+    margin-top: 6.13rem; }
+  #latest-news .articles-container {
+    margin: 2rem auto 6.38rem auto;
+    width: 63%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around; }
+    #latest-news .articles-container .article {
+      height: 22.13rem;
+      width: 22.13rem;
+      margin: 1.5rem;
+      border: 1px solid #e0dfde;
+      /* Crisper Images                              */
+      /* Opera                         */
+      image-rendering: -o-crisp-edges;
+      /* Safari                                 */
+      image-rendering: -webkit-optimize-contrast;
+      /* CSS3 Proposed                       */
+      image-rendering: optimize-contrast;
+      /* IE8+                                  */
+      -ms-interpolation-mode: nearest-neighbor;
+      background-repeat: no-repeat;
+      background-position: center;
+      -webkit-background-size: cover;
+              background-size: cover;
+      position: relative;
+      /* gradient overlay for images */ }
+      #latest-news .articles-container .article:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-image: -webkit-linear-gradient(45deg, #472424 0%, rgba(71, 36, 36, 0) 100%);
+        background-image: -o-linear-gradient(45deg, #472424 0%, rgba(71, 36, 36, 0) 100%);
+        background-image: linear-gradient(45deg, #472424 0%, rgba(71, 36, 36, 0) 100%);
+        z-index: 1; }
+    #latest-news .articles-container h2,
+    #latest-news .articles-container p {
+      color: #ffffff;
+      padding: 1.5rem;
+      position: absolute;
+      z-index: 2;
+      font-size: 1rem;
+      line-height: 1.625; }
+    #latest-news .articles-container h2 {
+      top: 50%;
+      font-family: "TruenoBold", Helvetica, Arial, sans-serif;
+      font-weight: bold; }
+    #latest-news .articles-container p {
+      top: 60%;
+      font-family: "TruenoLight", Helvetica, Arial, sans-serif; }
+    #latest-news .articles-container .comments {
+      top: 80%;
+      color: #ff7373; }
+      #latest-news .articles-container .comments img {
+        vertical-align: middle; }
+    #latest-news .articles-container .article-1 {
+      background-image: url("./Images/Article One.png"); }
+    #latest-news .articles-container .article-2 {
+      background-image: url("./Images/Article Two.png"); }
+    #latest-news .articles-container .article-3 {
+      background-image: url("./Images/Article Three.png"); }
+
+/* Questions Section */
+#questions {
+  height: 12.5rem;
+  max-width: 100%;
+  background: #ff7373;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  #questions .questions-container {
+    width: 80%;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around; }
+    #questions .questions-container .help {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      color: #ffffff;
+      font-size: 1rem;
+      font-family: "TruenoLight", Helvetica, Arial, sans-serif;
+      line-height: 1.625; }
+      #questions .questions-container .help h3 {
+        font-family: "TruenoBold", Helvetica, Arial, sans-serif;
+        font-weight: 600;
+        line-height: 1.2;
+        font-size: 30px; }
+      #questions .questions-container .help .mail-icon {
+        width: 3.875rem;
+        height: 2.625rem;
+        -webkit-align-self: center;
+            -ms-flex-item-align: center;
+                align-self: center;
+        margin-right: 1rem; }
+  #questions .inquiry {
+    -webkit-align-self: center;
+        -ms-flex-item-align: center;
+            align-self: center; }
+    #questions .inquiry button {
+      background: #472424;
+      color: #ffffff;
+      border: none;
+      font-size: 1rem;
+      line-height: 1.625;
+      font-family: "TruenoBold", Helvetica, Arial, sans-serif;
+      font-weight: 700;
+      width: 13.1875rem;
+      height: 3rem;
+      -webkit-transition: all .2s ease-in-out;
+      -o-transition: all .2s ease-in-out;
+      transition: all .2s ease-in-out; }
+      #questions .inquiry button:hover {
+        cursor: pointer;
+        -webkit-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+                transform: scale(1.1); }
+
+/* Footer Section */
+#footer {
+  max-width: 100%;
+  height: 45.75rem;
+  background: #623232; }
+  #footer .services {
+    min-height: 13rem;
+    max-width: 60%;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    text-align: center;
+    color: #ffffff;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around; }
+    #footer .services .shipping,
+    #footer .services .money-back,
+    #footer .services .customer-support,
+    #footer .services .lowest-prices,
+    #footer .services .exclusive-items,
+    #footer .services .delivery {
+      max-width: 9rem;
+      min-height: 8rem;
+      line-height: 1.625;
+      font-size: 1rem;
+      font-family: "TruenoLight", Helvetica, Arial, sans-serif; }
+      #footer .services .shipping p,
+      #footer .services .money-back p,
+      #footer .services .customer-support p,
+      #footer .services .lowest-prices p,
+      #footer .services .exclusive-items p,
+      #footer .services .delivery p {
+        margin-top: 1.75rem; }
+    #footer .services .delivery img {
+      margin-top: .3rem; }
+    #footer .services .delivery p {
+      margin-top: 2.2rem; }
+  #footer hr {
+    border-color: rgba(255, 255, 255, 0.149);
+    background-color: rgba(255, 255, 255, 0.149);
+    color: rgba(255, 255, 255, 0.149);
+    height: 1px;
+    width: 62%;
+    margin: 0 auto;
+    border: none; }
+  #footer .sitemap-container {
+    width: 67%;
+    margin: 3.75rem auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around; }
+    #footer .sitemap-container .contact,
+    #footer .sitemap-container .navigation,
+    #footer .sitemap-container .categories,
+    #footer .sitemap-container .sales,
+    #footer .sitemap-container .support {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+    #footer .sitemap-container .call-us,
+    #footer .sitemap-container .email-us,
+    #footer .sitemap-container .address {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center; }
+    #footer .sitemap-container .call-us-icon,
+    #footer .sitemap-container .email-us-icon,
+    #footer .sitemap-container .address-icon {
+      width: 3.44rem;
+      height: 3.44rem;
+      background: #ff7373;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      margin: 1rem; }
+    #footer .sitemap-container .contact-method,
+    #footer .sitemap-container .navigation,
+    #footer .sitemap-container .categories,
+    #footer .sitemap-container .sales,
+    #footer .sitemap-container .support {
+      font-size: 1rem;
+      font-family: "TruenoBold", Helvetica, Arial, sans-serif;
+      line-height: 1.625; }
+    #footer .sitemap-container h4 {
+      color: #ff7373;
+      font-weight: 700; }
+    #footer .sitemap-container p {
+      font-family: "TruenoLight", Helvetica, Arial, sans-serif; }
+    #footer .sitemap-container p,
+    #footer .sitemap-container a {
+      color: #ffffff; }
+    #footer .sitemap-container a {
+      text-decoration: none; }
+  #footer .navigation a,
+  #footer .categories a,
+  #footer .sales a,
+  #footer .support a {
+    margin-top: 1rem; }
+  #footer .footer-bottom {
+    width: 68%;
+    margin: 3rem auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    -webkit-box-align: baseline;
+    -webkit-align-items: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    font-family: "TruenoLight", Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    color: #ffffff; }
+    #footer .footer-bottom a {
+      color: #ff7373;
+      text-decoration: none; }
+    #footer .footer-bottom .social-links img {
+      margin-left: 2rem; }
